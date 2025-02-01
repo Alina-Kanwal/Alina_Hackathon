@@ -5,9 +5,6 @@ import Link from "next/link";
 import { useRouter } from "next/navigation";
 
 
-
-
-
 const CheckoutPage = () => {
     const { cartItems, setCartItems } = useCart();
     const [userDetails, setUserDetails] = useState({
@@ -72,7 +69,7 @@ const CheckoutPage = () => {
                         placeholder="Full Name"
                         value={userDetails.name}
                         onChange={handleChange}
-                        className="w-full p-3 border border-gray-300 rounded-md dark:bg-gray-700 dark.text-black"
+                        className="w-full p-3 border border-gray-300 rounded-md text-gray-700 dark:text-gray-300"
                         required
                     />
                     <input
@@ -81,7 +78,7 @@ const CheckoutPage = () => {
                         placeholder="Email Address"
                         value={userDetails.email}
                         onChange={handleChange}
-                        className="w-full p-3 border border-gray-300 rounded-md dark:bg-gray-700 dark.text-black"
+                        className="w-full p-3 border border-gray-300 rounded-md text-gray-700 dark:text-gray-300"
                         required
                     />
                     <input
@@ -90,7 +87,7 @@ const CheckoutPage = () => {
                         placeholder="Contact Number"
                         value={userDetails.contact}
                         onChange={handleChange}
-                        className="w-full p-3 border border-gray-300 rounded-md dark:bg-gray-700 dark.text-black"
+                        className="w-full p-3 border border-gray-300 rounded-md text-gray-700 dark:text-gray-300"
                         required
                     />
                     <input
@@ -99,7 +96,7 @@ const CheckoutPage = () => {
                         placeholder="Address"
                         value={userDetails.address}
                         onChange={handleChange}
-                        className="w-full p-3 border border-gray-300 rounded-md dark:bg-gray-700 dark.text-black"
+                        className="w-full p-3 border border-gray-300 rounded-md text-gray-700 dark:text-gray-300"
                         required
                     />
                 </div>
